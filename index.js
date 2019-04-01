@@ -14,9 +14,14 @@ window.addEventListener("load", () => {
     
     // get the thing that was entered
     const input = document.getElementById('password-length')
-    console.log(input.value)
+    const howManyCharacters = input.value
+    for (let i = 0; i <howManyCharacters; i++){
+      console.log('yikes')
+    }
   }
   
   document.addEventListener('submit', onSubmit)
+  
+  // 
   
 });
