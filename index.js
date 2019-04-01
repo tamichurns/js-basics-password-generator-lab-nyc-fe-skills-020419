@@ -18,7 +18,8 @@ window.addEventListener("load", () => {
     // create a loop that replaces the number inputted, and returns a random letter each time:
     for (let i = 0; i < howManyCharacters; i++){
       //what do you want the loop to do? pick a random letter in this case
-     console.log(Math.floor(Math.random() * 26)) 
+     const randomIndex = Math.floor(Math.random() * 26)
+     console.log(lowerCaseLetters[randomIndex])
     }
   }
   
