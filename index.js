@@ -22,6 +22,7 @@ window.addEventListener("load", () => {
      const randomIndex = Math.floor(Math.random() * 26)
      startingString += lowerCaseLetters[randomIndex]
     }
+    console.log(startingString)
   }
   
   document.addEventListener('submit', onSubmit)
