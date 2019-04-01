@@ -57,3 +57,11 @@ output {
 a:link {
     text-decoration: none;
 }
+
+#input {
+  height: 48px;
+  width: 400px;
+}
+
+
+
