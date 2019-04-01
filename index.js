@@ -8,8 +8,11 @@ window.addEventListener("load", () => {
   
   
   function onSubmit(event){
+    
     // prevent weird submitting form default behavior
+    
     event.preventDefault()
+    
     // get the thing that was entered
     const input = document.getElementById('password-length')
     console.log(input.value)
