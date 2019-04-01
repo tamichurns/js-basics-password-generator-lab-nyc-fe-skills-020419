@@ -15,6 +15,7 @@ window.addEventListener("load", () => {
     // get the thing that was entered
     const input = document.getElementById('password-length')
     const howManyCharacters = input.value
+    
     // create a loop that replaces the number inputted, and returns a random letter each time:
     let startingString = ''
     for (let i = 0; i < howManyCharacters; i++){
