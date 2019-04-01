@@ -9,7 +9,7 @@ window.addEventListener("load", () => {
   
   function onSubmit(event){
     event.preventDefault()
-    const input = document.getElementById('input')
+    const input = document.getElementById('password-length')
     console.log(input.value)
   }
   
