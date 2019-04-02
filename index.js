@@ -27,13 +27,13 @@ window.addEventListener("load", () => {
      startingString += lowerCaseLetters[randomIndex]
      
      randomIndex = Math.floor(Math.random() * upperCaseLetters.length)
-     startingString += lowerCaseLetters[randomIndex]
+     startingString += upperCaseLetters[randomIndex]
      
      randomIndex = Math.floor(Math.random() * numbers.length)
-     startingString += lowerCaseLetters[randomIndex]
+     startingString += numbers[randomIndex]
      
      randomIndex = Math.floor(Math.random() * specialCharacters.length)
-     startingString += lowerCaseLetters[randomIndex]
+     startingString += specialCharacters[randomIndex]
      
      
     }
