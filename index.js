@@ -19,7 +19,7 @@ window.addEventListener("load", () => {
       howManyCharacters = 4 
     }
     
-    // create a loop that replaces the number inputted, and returns a random letter each time:
+    // create a loop that replaces the number inputted, and returns a random value each time:
     let startingString = ''
     for (let i = 0; i < howManyCharacters; i++){
       
