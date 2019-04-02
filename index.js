@@ -22,9 +22,16 @@ window.addEventListener("load", () => {
       
       //what do you want the loop to do? pick a random letter in this case.
      // then how do you bring in the rest of the 'const's above?
+     // then yyou need to add an if statement to make sure the script runs only the same number of times as the input value
      
-     let randomIndex = Math.floor(Math.random() * lowerCaseLetters.length)
-     startingString += lowerCaseLetters[randomIndex]
+     if (startingString.length < howManyCharacters) {
+        let randomIndex = Math.floor(Math.random() * lowerCaseLetters.length)
+        startingString += lowerCaseLetters[randomIndex]
+     }
+       
+     }
+     
+   
      
      randomIndex = Math.floor(Math.random() * upperCaseLetters.length)
      startingString += upperCaseLetters[randomIndex]
