@@ -23,6 +23,7 @@ window.addEventListener("load", () => {
      const randomIndex = Math.floor(Math.random() * 26)
      startingString += lowerCaseLetters[randomIndex]
     }
+    console.log(startingString)
     const output = document.getElementById('output')
     output.innerHTML = startingString
   }
