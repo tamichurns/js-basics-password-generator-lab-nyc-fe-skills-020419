@@ -21,10 +21,6 @@ window.addEventListener("load", () => {
     for (let i = 0; i < howManyCharacters; i++){
       
       //what do you want the loop to do? pick a random letter in this case.
-      
-     const randomIndex = Math.floor(Math.random() * 26)
-     startingString += lowerCaseLetters[randomIndex]
-     
      // then how do you bring in the rest of the 'const's above?
      
      let randomIndex = Math.floor(Math.random() * lowerCaseLetters.length)
