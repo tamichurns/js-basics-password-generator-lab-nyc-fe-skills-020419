@@ -28,27 +28,28 @@ window.addEventListener("load", () => {
         let randomIndex = Math.floor(Math.random() * lowerCaseLetters.length)
         startingString += lowerCaseLetters[randomIndex]
      }
-       
+     
+      if (startingString.length < howManyCharacters) {
+        randomIndex = Math.floor(Math.random() * upperCaseLetters.length)
+        startingString += upperCaseLetters[randomIndex]
      }
      
-   
+      if (startingString.length < howManyCharacters) {
+        randomIndex = Math.floor(Math.random() * numbers.length)
+        startingString += numbers[randomIndex]
+     }
      
-     randomIndex = Math.floor(Math.random() * upperCaseLetters.length)
-     startingString += upperCaseLetters[randomIndex]
-     
-     randomIndex = Math.floor(Math.random() * numbers.length)
-     startingString += numbers[randomIndex]
-     
-     randomIndex = Math.floor(Math.random() * specialCharacters.length)
-     startingString += specialCharacters[randomIndex]
-     
-     
+      if (startingString.length < howManyCharacters) {
+        randomIndex = Math.floor(Math.random() * specialCharacters.length)
+        startingString += specialCharacters[randomIndex]
+     }
     }
     //replace your current "result" div with outputted result
     const output = document.getElementById('result')
     output.innerHTML = startingString
   }
   
+  //run the damn thing
   document.addEventListener('submit', onSubmit)
   
   // 
